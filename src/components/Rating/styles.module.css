@@ -1,0 +1,35 @@
+.ratingContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+  padding: 30px 0px;
+  background-color: rgba(255, 255, 0, 0.307);
+}
+
+.ratingImg {
+  width: 40%;
+  height: 200px;
+}
+
+.buttonContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(255, 255, 0, 0.398);
+  padding: 20px 0px;
+}
+
+.ratingButton {
+  height: 30px;
+  width: 100px;
+  border: 2px solid gray;
+  cursor: pointer;
+  background-color: rgb(200, 200, 200);
+}
+
+.ratingButton:hover {
+  background-color: yellow;
+}
