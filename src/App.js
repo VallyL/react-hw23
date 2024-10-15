@@ -1,12 +1,18 @@
 import "./App.css";
-import Rating from "./components/Rating";
-import GuestList from "./components/List";
+import { Routes, Route } from "react-router-dom";
+import Login from "./components/Login";
+import Profile from "./components/Profile";
+import RequireAuth from "./components/RequireAuth";
 
 function App() {
   return (
     <>
-      <Rating />
-      <GuestList />
+      <Routes>
+        <Route path="/login" element={<Login />} />
+        <Route path="/profile" element={<RequireAuth />}>
+          <Route index element={<Profile />} />
+        </Route>
+      </Routes>
     </>
   );
 }
